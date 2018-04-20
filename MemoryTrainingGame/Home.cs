@@ -13,11 +13,6 @@ namespace MemoryTrainingGame
     {
 
         //Intial Form
-        Game _game = new Game();
-        Settings _settings = new Settings();
-        
-
-
         public Home()
         {
             InitializeComponent();
@@ -26,17 +21,19 @@ namespace MemoryTrainingGame
 
         private void StartGameBtn_Click(object sender, EventArgs e)
         {
-            _game.Show();
+            Game _game = new Game();
+            _game.ShowDialog();
         }
         
         private void SettingBtn_Click(object sender, EventArgs e)
         {
-            _settings.Show();
+            Settings _settings = new Settings();
+            _settings.ShowDialog();
         }
 
         private void AboutBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("In Progress...","Wooups...");
+            MessageBox.Show("In Progress...", "Wooups...");
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)
