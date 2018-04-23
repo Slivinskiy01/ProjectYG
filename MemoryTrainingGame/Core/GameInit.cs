@@ -7,6 +7,6 @@ namespace MemoryTrainingGame.Core
 {
     public class GameInit
     {
-
+        //
     }
 }

@@ -17,7 +17,7 @@ namespace MemoryTrainingGame
     {
         // Init
         public static int _countValue = GameSettings.MaxShownValue;
-        public int[] rand = new int[_countValue];
+        public int[] rand = new int[GameSettings.MaxShownValue];
         public int score;
 
         DataContext DS = new DataContext();
@@ -29,6 +29,7 @@ namespace MemoryTrainingGame
         public Game()
         {
             InitializeComponent();
+            timer1.Interval = GameSettings.ShowIntervalSecond * 1000;
             this.Closed += (s, args) => {
                 ResultForm result = new ResultForm(User, score, _range);
                 result.ShowDialog();
@@ -38,10 +39,7 @@ namespace MemoryTrainingGame
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Text = rand[_tCounter].ToString();
-
-            _tCounter++;
-            if(!(_tCounter < _countValue))
+            if(!(_tCounter < GameSettings.MaxShownValue))
             {
                 timer1.Stop();
                 _tCounter = 0;
@@ -50,11 +48,16 @@ namespace MemoryTrainingGame
                 checkTextInput.Enabled = true;
                 HelperLabel.Visible = true;
             }
+            else
+            {
+                label1.Text = rand[_tCounter].ToString();
+                _tCounter++;
+            }
         }
 
         private void StartGameBtn_Click(object sender, EventArgs e)
         {
-            rand = Helpers.Helper.GetRandomArrayByRange(_range, _countValue);
+            rand = Helpers.Helper.GetRandomArrayByRange(_range, GameSettings.MaxShownValue);
 
             timer1.Start();
             StartGameBtn.Enabled = false;
@@ -106,7 +109,8 @@ namespace MemoryTrainingGame
                 ScoreLabelValue.Text = score.ToString();
                 LevelLabelValue.Text = _range.ToString();
             }
-            else {
+            else
+            {
                 User.Scores.Add(new ScoreModel()
                 {
                     MemorizedValues = start.MemorizedValues,

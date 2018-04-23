@@ -10,3 +10,4 @@ C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrai
 C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.exe
 C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.pdb
 C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.ResultForm.resources
+C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.HelpForm.resources

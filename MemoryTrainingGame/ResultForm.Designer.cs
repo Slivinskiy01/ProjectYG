@@ -42,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.ScoreValueLabel = new System.Windows.Forms.Label();
             this.lvlValueLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -157,17 +156,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Правельные ответы:";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(575, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 31);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Сохранить реузльтат";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ScoreValueLabel
             // 
             this.ScoreValueLabel.AutoSize = true;
@@ -193,7 +181,6 @@
             this.ClientSize = new System.Drawing.Size(785, 395);
             this.Controls.Add(this.lvlValueLabel);
             this.Controls.Add(this.ScoreValueLabel);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -227,7 +214,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label ScoreValueLabel;
         private System.Windows.Forms.Label lvlValueLabel;
     }

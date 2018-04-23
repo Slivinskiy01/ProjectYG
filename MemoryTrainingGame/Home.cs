@@ -33,7 +33,8 @@ namespace MemoryTrainingGame
 
         private void AboutBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("In Progress...", "Wooups...");
+            HelpForm _help = new HelpForm();
+            _help.ShowDialog();
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)

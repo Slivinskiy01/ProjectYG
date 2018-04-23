@@ -7,6 +7,7 @@ namespace MemoryTrainingGame.Model
 {
     public class DataContext
     {
+        // TODO : Connection to DB [if is need]
         public DataContext()
         {
 

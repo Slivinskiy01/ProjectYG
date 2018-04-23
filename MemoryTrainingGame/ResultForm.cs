@@ -34,6 +34,7 @@ namespace MemoryTrainingGame
                 dataGridView2.RowCount = maxI;
                 dataGridView2.ColumnCount = maxJ;
                 dataGridView2.DefaultCellStyle.SelectionBackColor = Color.Transparent;
+                dataGridView2.DefaultCellStyle.SelectionForeColor = Color.Black;
 
                 for (int i = 0; i < maxI; i++)
                 {
@@ -57,13 +58,6 @@ namespace MemoryTrainingGame
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             _user.Name = textBox1.Text;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //TODO:: Save data... 
-
-            MessageBox.Show("In progress...");
         }
     }
 }
