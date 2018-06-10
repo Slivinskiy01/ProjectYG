@@ -44,6 +44,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.ScoreValueLabel = new System.Windows.Forms.Label();
             this.lvlValueLabel = new System.Windows.Forms.Label();
+            this.SaveResultBtn = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,11 +176,23 @@
             this.lvlValueLabel.Size = new System.Drawing.Size(0, 21);
             this.lvlValueLabel.TabIndex = 9;
             // 
+            // SaveResultBtn
+            // 
+            this.SaveResultBtn.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveResultBtn.Location = new System.Drawing.Point(609, 12);
+            this.SaveResultBtn.Name = "SaveResultBtn";
+            this.SaveResultBtn.Size = new System.Drawing.Size(164, 29);
+            this.SaveResultBtn.TabIndex = 10;
+            this.SaveResultBtn.Text = "Сохранить Результаты";
+            this.SaveResultBtn.UseVisualStyleBackColor = true;
+            this.SaveResultBtn.Click += new System.EventHandler(this.SaveResultBtn_Click);
+            // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 395);
+            this.Controls.Add(this.SaveResultBtn);
             this.Controls.Add(this.lvlValueLabel);
             this.Controls.Add(this.ScoreValueLabel);
             this.Controls.Add(this.label3);
@@ -216,5 +230,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label ScoreValueLabel;
         private System.Windows.Forms.Label lvlValueLabel;
+        private System.Windows.Forms.Button SaveResultBtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

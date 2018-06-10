@@ -62,7 +62,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "HelpForm";
-            this.Text = "HelpForm";
+            this.Text = "О программе";
             this.ResumeLayout(false);
             this.PerformLayout();
 

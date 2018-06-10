@@ -34,6 +34,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.SaveSettingBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -63,7 +64,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(432, 45);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Минимальнео количество правельных ответов для перехода на следующий уровень:";
+            this.label3.Text = "Минимальное количество правельных ответов для перехода на следующий уровень:";
             // 
             // textBox1
             // 
@@ -92,12 +93,23 @@
             this.textBox3.TabIndex = 5;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // SaveSettingBtn
+            // 
+            this.SaveSettingBtn.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SaveSettingBtn.Location = new System.Drawing.Point(331, 226);
+            this.SaveSettingBtn.Name = "SaveSettingBtn";
+            this.SaveSettingBtn.Size = new System.Drawing.Size(113, 23);
+            this.SaveSettingBtn.TabIndex = 6;
+            this.SaveSettingBtn.Text = "Сохранить";
+            this.SaveSettingBtn.UseVisualStyleBackColor = true;
+            this.SaveSettingBtn.Click += new System.EventHandler(this.SaveSettingBtn_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MemoryTrainingGame.Properties.Resources._240_F_127399753_quqSp2VaqHA4Jrv8tkgkHUveFK0gy76e;
             this.ClientSize = new System.Drawing.Size(456, 261);
+            this.Controls.Add(this.SaveSettingBtn);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button SaveSettingBtn;
     }
 }

@@ -11,3 +11,18 @@ C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrai
 C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.pdb
 C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.ResultForm.resources
 C:\Users\m.slivinschi\Desktop\Project YG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.HelpForm.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\bin\Debug\MemoryTrainingGame.exe
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\bin\Debug\MemoryTrainingGame.pdb
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.csprojResolveAssemblyReference.cache
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.HelpForm.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.Home.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.Properties.Resources.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.Game.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.ResultForm.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.Settings.resources
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.csproj.GenerateResource.Cache
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.csproj.CoreCompileInputs.cache
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.exe
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.pdb
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\obj\Debug\MemoryTrainingGame.csproj.ResolveComReference.cache
+C:\Users\JUNIOR\Desktop\ProjectYG\MemoryTrainingGame\bin\Debug\MemoryTrainingGame.exe.config

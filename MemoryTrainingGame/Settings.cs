@@ -26,6 +26,15 @@ namespace MemoryTrainingGame
             textBox3.Text = GameSettings.MinTrueAnswerForNextLvl.ToString();
         }
 
+        private void SaveSettingBtn_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default["MaxShownValue"] = textBox1.Text;
+            Properties.Settings.Default["ShowIntervalSecond"] = textBox2.Text;
+            Properties.Settings.Default["MinTrueAnswerForNextLvl"] = textBox3.Text;
+            Properties.Settings.Default.Save();
+            MessageBox.Show("Настройки Сохранены", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         /// <summary>
         /// Validation if object is TextBox & if is value parse to int
         /// </summary>
@@ -99,5 +108,7 @@ namespace MemoryTrainingGame
                 }
             }
         }
+        
+        
     }
 }
