@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MemoryTrainingGame.Core
 {
+    /// <summary>
+    /// Свойтва настроеек
+    /// </summary>
     public static class GameSettings
     {
         public static int MaxShownValue { get; set; } = 8;

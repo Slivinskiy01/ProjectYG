@@ -2,7 +2,7 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MemoryTrainingGame.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="MaxShownValue" Type="System.String" Scope="Application">
+    <Setting Name="MaxShownValue" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="ShowIntervalSecond" Type="System.String" Scope="User">

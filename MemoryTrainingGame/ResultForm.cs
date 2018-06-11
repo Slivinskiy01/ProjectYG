@@ -74,7 +74,11 @@ namespace MemoryTrainingGame
             ScoreValueLabel.Text = $"Ваш счет: {score}";
             lvlValueLabel.Text = $"Уровень: {lvl}";
         }
-
+        /// <summary>
+        /// Изменение имени игрока
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             _user.Name = textBox1.Text;

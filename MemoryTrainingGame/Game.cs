@@ -15,7 +15,7 @@ namespace MemoryTrainingGame
 {
     public partial class Game : Form
     {
-        // Init
+        // Инициализация глобальных свойств \ переменных
         public static int _countValue = GameSettings.MaxShownValue;
         public int[] rand = new int[GameSettings.MaxShownValue];
         public int score;
@@ -26,17 +26,19 @@ namespace MemoryTrainingGame
         int _tCounter;
         int _range = GameSettings.StartRangeValue;
 
+        /// <summary>
+        /// Конструктор класса
+        /// </summary>
         public Game()
         {
             InitializeComponent();
             timer1.Interval = GameSettings.ShowIntervalSecond * 1000;
-            this.Closed += (s, args) => {
-                ResultForm result = new ResultForm(User, score, _range);
-                result.ShowDialog();
-                this.Hide();
-            };
         }
-
+        /// <summary>
+        /// Метод Таймера, для отображения чисел, с определенным интервалом
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {
             if(!(_tCounter < GameSettings.MaxShownValue))
@@ -54,7 +56,11 @@ namespace MemoryTrainingGame
                 _tCounter++;
             }
         }
-
+        /// <summary>
+        /// Метод запуска игры
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StartGameBtn_Click(object sender, EventArgs e)
         {
             rand = Helpers.Helper.GetRandomArrayByRange(_range, GameSettings.MaxShownValue);
@@ -62,12 +68,16 @@ namespace MemoryTrainingGame
             timer1.Start();
             StartGameBtn.Enabled = false;
         }
-        
+        /// <summary>
+        /// Проверка введенных значений
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CheckBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(checkTextInput.Text))
             {
-                throw new Exception("Ошибка, поле пустое");
+                MessageBox.Show("Ошибка, поле пустое", "Ошибка",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
 
             var start = new ScoreModel
@@ -124,7 +134,11 @@ namespace MemoryTrainingGame
                 result.ShowDialog();
             }
         }
-
+        /// <summary>
+        /// Валидация введенных данных
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void checkTextInput_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))

@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MemoryTrainingGame.Model
 {
+    /// <summary>
+    /// Модель Контекста
+    /// </summary>
     public class DataContext
     {
         // TODO : Connection to DB [if is need]

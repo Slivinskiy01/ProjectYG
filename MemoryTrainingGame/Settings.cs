@@ -16,23 +16,36 @@ namespace MemoryTrainingGame
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Загрузка сохраненых настроек
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Settings_Load(object sender, EventArgs e)
         {
             textBox1.Text = GameSettings.MaxShownValue.ToString();
-
             textBox2.Text = GameSettings.ShowIntervalSecond.ToString();
-
             textBox3.Text = GameSettings.MinTrueAnswerForNextLvl.ToString();
         }
-
+        /// <summary>
+        /// Сохранение настроек
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveSettingBtn_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default["MaxShownValue"] = textBox1.Text;
             Properties.Settings.Default["ShowIntervalSecond"] = textBox2.Text;
             Properties.Settings.Default["MinTrueAnswerForNextLvl"] = textBox3.Text;
-            Properties.Settings.Default.Save();
-            MessageBox.Show("Настройки Сохранены", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult dialogResult = MessageBox.Show("Вы действительно хотите сохранить настройки?", "Настройки", MessageBoxButtons.YesNo,MessageBoxIcon.Information);
+            if (dialogResult == DialogResult.Yes)
+            {
+                GameSettings.MaxShownValue = int.Parse(textBox1.Text);
+                GameSettings.ShowIntervalSecond = int.Parse(textBox2.Text);
+                GameSettings.MinTrueAnswerForNextLvl = int.Parse(textBox3.Text);
+                Properties.Settings.Default.Save();
+                this.Close();
+            }
         }
 
         /// <summary>
@@ -61,14 +74,17 @@ namespace MemoryTrainingGame
 
             return false;
         }
-
+        /// <summary>
+        /// Валидация изминений 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (!ValidationObjectTextToInt(sender))
             {
                 return;
             }
-            GameSettings.MaxShownValue = int.Parse(textBox1.Text);
             
             int _b;
 
@@ -80,23 +96,29 @@ namespace MemoryTrainingGame
                 }
             }
         }
-
+        /// <summary>
+        /// Валидация изминений 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             if (!ValidationObjectTextToInt(sender))
             {
                 return;
             }
-            GameSettings.ShowIntervalSecond = int.Parse(textBox2.Text);
         }
-
+        /// <summary>
+        /// Валидация изминений 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             if (!ValidationObjectTextToInt(sender))
             {
                 return;
             }
-            GameSettings.MinTrueAnswerForNextLvl = int.Parse(textBox3.Text);
 
             int _b;
 

@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MemoryTrainingGame.Model
 {
+    /// <summary>
+    /// Модель счета
+    /// </summary>
     public class ScoreModel
     {
         public int Id { get; set; }

@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MemoryTrainingGame.Model
 {
+    /// <summary>
+    /// Модель пользователя
+    /// </summary>
     public class UserModel
     {
         public int Id { get; set; }

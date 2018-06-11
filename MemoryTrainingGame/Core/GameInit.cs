@@ -7,6 +7,9 @@ namespace MemoryTrainingGame.Core
 {
     public class GameInit
     {
+        /// <summary>
+        /// Инициализация сохраненых настроек
+        /// </summary>
         public GameInit()
         {
             string _MaxShownValue = Properties.Settings.Default["MaxShownValue"].ToString();
